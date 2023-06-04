@@ -1,0 +1,70 @@
+<!-- You Can Do It!!!! -->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Pixel Paint</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet"> <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+	<header>
+		<h1>Pixel Paint</h1>
+		<p>Make Your Own Art!</p>
+	</header>
+	<div class="controls">
+
+		<div class="brush" id="brush">
+		<label for="colorPicker">Brush Color</label>
+		<input type="color" id="colorPicker">
+	</div>
+
+	<br>
+	<br>
+
+	<div class="Button-Size" id="Button-Size">
+		
+		<label for="cellSize">Canvas Size</label>
+
+		<div class="bar" id="bar">
+
+		<input type="range" min="10" max="60" id="columns" step="10" value="30">
+	</div>
+	</div>
+
+	<div class="button-undo" id="button-undo">
+		<button data-undo>Undo</button>
+	</div>
+
+	<div class="button-clear" id="button-clear">
+		<button data-clear>Clear</button>
+	</div>
+
+	<div class="button-save" id="button-save">
+		<button data-save>Save</button>
+	</div>
+	
+	</div>
+	<div class="canvas">
+		<div class="draw-area">
+			<div class="marker"></div>
+		</div>
+	</div>
+	<div class="code" id="code">
+	<div class="css">
+		<label for="css">CODE:</label>
+		<br>
+		<div class="tab" id="tab">
+		<textarea name="cssCode" id="css" rows="10"></textarea>
+		<button data-copy class="copy" id="copy">Copy</button>
+	</div>
+	</div>
+</div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/7.7.0/d3.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
